@@ -55,3 +55,56 @@
 // four decimal places using object classes.   
 // Volume of a cylinder : V = πr2h
 // where r is the radius and h is the height of the cylinder.
+
+// Date Handling
+// 2. Write a JavaScript function to get the current date.
+// Note : Pass a separator as an argument.
+// function getDate(separation)
+// {
+//     var date = new Date()
+//     var day = date.getDate();
+//     var month = date.getMonth()
+//     var year = date.getFullYear()
+//     console.log(day+separation+month+separation+year)
+// }
+// var separator = prompt("Please enter the separator:")
+// getDate(separator)
+
+// 3. Write a JavaScript function to get the number of days in a month.
+// function getDays(month,year)
+// {
+//     var numberOfDays = 28
+//     var month31 = [0,2,4,6,7,9,11]
+//     var month30 = [3,5,8,10]
+//     var month29 = [1]
+//     for(i=0;i<month31.length;i++)
+//     {
+//         if(month == month31[i])
+//         {
+//             numberOfDays = 31;
+//         }
+//         else if(month == month30[i])
+//         {
+//             numberOfDays = 30;
+//         }
+//         else if(month == 1 && year%4 ==0)
+//         {
+//             numberOfDays = 29
+//         }
+//     }
+//     console.log(numberOfDays)
+// }
+// var month = prompt("*Note:Months are starting from 0.Please enter the month Number:")
+// var year = prompt("Please enter the year:")
+// getDays(month,year)
+
+// 4. Write a JavaScript function to get the month name from a particular date.
+// function monthName(m)
+// {
+//     var months = [0,"January","February","March","April","May","June","July","August","September","October","November","December"]
+//     console.log(months[m])
+// }
+// var date = new Date()
+// var mon = prompt("Please enter the month number:")
+// monthName(mon)
+
