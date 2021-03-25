@@ -117,3 +117,54 @@
 //     console.log("Set minutes of time:"+date.getMinutes())
 // }
 // SettingMinutes()
+
+// 7. Write a JavaScript function to test whether a date is a weekend.
+// function  weekend(mon,dat,ye)
+// {
+//     var date = new Date()
+//     date.setDate(dat)
+//     date.setMonth(mon)
+//     date.setFullYear(ye)
+//     var day = date.getDay()
+//     if(day == 6 || day == 7)
+//     {
+//         console.log("weekend")
+//     }
+//     else
+//     {
+//         console.log("Not weekend")
+//     }
+// }
+// var month =prompt("Please enter month name:")
+// var date = prompt("Please enter the date:")
+// var year = prompt("Please enter the year:")
+// weekend(month,date,year)
+
+// 9. Write a JavaScript function to get the last day of a month.
+// function getLastDay(month,year)
+// {
+//     var lastday = 28
+//     var month31 = [0,2,4,6,7,9,11]
+//     var month30 = [3,5,8,10]
+//     var month29 = [1]
+//     for(i=0;i<month31.length;i++)
+//     {
+//         if(month == month31[i])
+//         {
+//             lastday = 31;
+//         }
+//         else if(month == month30[i])
+//         {
+//             lastday = 30;
+//         }
+//         else if(month == 1 && year%4 ==0)
+//         {
+//             lastday = 29
+//         }
+//     }
+//     console.log(lastday)
+// }
+// var month = prompt("*Note:Months are starting from 0.Please enter the month Number:")
+// var year = prompt("Please enter the year:")
+// getLastDay(month,year)
+
