@@ -108,3 +108,12 @@
 // var mon = prompt("Please enter the month number:")
 // monthName(mon)
 
+// 6. Write a JavaScript function to add specified minutes to a Date object.
+// function SettingMinutes()
+// {
+//     var date = new Date()
+//     console.log("Actual minutes of time:"+date.getMinutes())
+//     date.setMinutes(45)
+//     console.log("Set minutes of time:"+date.getMinutes())
+// }
+// SettingMinutes()
