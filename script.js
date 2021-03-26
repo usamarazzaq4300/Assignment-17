@@ -196,6 +196,96 @@
 // var year = prompt("Please enter the year:")
 // yesterday(month,date,year)
 
+// 13. Write a JavaScript function that will return the number of minutes in hours and minutes.
+// function minutes()
+// {
+//     var minute = 130
+//     var hours = minute/60
+//     var mins = minute%60
+//     hours = hours.toFixed(0)
+//     Math.floor(hours)
+//     console.log("Hours: "+hours+" , Minutes: "+mins)
 
+// }
+// minutes()
 
+// 14. Write a JavaScript function to get the amount of days of a year.
+// function NumOfDays()
+// {
+//     var year = prompt("Please enter the year:")
+//     year = parseInt(year)
+//     if(year%4 == 0)
+//     {
+//         console.log("366 Days")
+//     }
+//     else
+//     {
+//         console.log("365 Days")
+//     }
+// }
+// NumOfDays()
 
+// 15. Write a JavaScript function to get the quarter (1 to 4) of the year.
+// function quarter(mon,d,y)
+// {
+//     var date = new Date()
+//     date.setMonth(mon)
+//     date.setDate(d)
+//     date.setFullYear(y)
+//     var mont = date.getMonth()
+//     if(mont>=0 && mont<3)
+//     {
+//         console.log("Quarter 1")
+//     }
+//     else if(mont>=3 && mont<6)
+//     {
+//         console.log("Quarter 2")
+//     }
+//     else if(mont>=6 && mont<9)
+//     {
+//         console.log("Quarter 3")
+//     }
+//     else
+//     {
+//         console.log("Quarter 4")
+//     }
+// }
+// var month =prompt("Please enter month number:")
+// var date = prompt("Please enter the date:")
+// var year = prompt("Please enter the year:")
+// quarter(month,date,year)
+
+// 16. Write a JavaScript function to count the number of days passed since beginning of the year.   
+// function noOfDays(m,d,y)
+// {
+//     var date = new Date()
+//     date.setMonth(m)
+//     date.setDate(d)
+//     date.setFullYear(y)
+//     var ye = date.getFullYear()
+//     var mo = date.getMonth()  
+//     var da = date.getDate()
+//     var NumOfDays = 0;
+//     var leapYear = [31,29,31,30,31,30,31,31,30,31,30,31]
+//     var notleapYear = [31,28,31,30,31,30,31,31,30,31,30,31]
+//     if(ye%4 == 0 && mo>=1)
+//     {
+//         for(i=0; i<mo; i++)
+//         {
+//             NumOfDays = NumOfDays+leapYear[i]
+//         }
+//     }
+//     else if(ye%4 != 0 && mo>=1)
+//     {
+//         for(i=0; i<mo; i++)
+//         {
+//             NumOfDays = NumOfDays+notleapYear[i]
+//         }
+//     }
+//     NumOfDays = NumOfDays+da
+//     console.log(NumOfDays)
+// }
+// var month =prompt("Please enter month number:")
+// var date = prompt("Please enter the date:")
+// var year = prompt("Please enter the year:")
+// noOfDays(month,date,year)
