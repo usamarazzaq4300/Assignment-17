@@ -140,6 +140,20 @@
 // var year = prompt("Please enter the year:")
 // weekend(month,date,year)
 
+// 8. Write a JavaScript function to get difference between two dates in days.
+// function differenceInDays()
+// {
+//     var now = new Date()
+//     var time = now.getTime()
+//     var past = new Date("Feb 10, 2021")
+//     var pastTime = past.getTime()
+//     var msDiff = time -pastTime ;
+//     var dDiff = msDiff / (1000 * 60 * 60 * 24);
+//     Math.floor(dDiff)
+//     console.log(dDiff)
+// }
+// differenceInDays()
+
 // 9. Write a JavaScript function to get the last day of a month.
 // function getLastDay(month,year)
 // {
@@ -167,4 +181,21 @@
 // var month = prompt("*Note:Months are starting from 0.Please enter the month Number:")
 // var year = prompt("Please enter the year:")
 // getLastDay(month,year)
+
+// 10. Write a JavaScript function to calculate 'yesterday day'.   
+// function yesterday(mon,d,y)
+// {
+//     var date = new Date()
+//     date.setMonth(mon)
+//     date.setDate(d-1)
+//     date.setFullYear(y)
+//     console.log(date)
+// }
+// var month =prompt("Please enter month number:")
+// var date = prompt("Please enter the date:")
+// var year = prompt("Please enter the year:")
+// yesterday(month,date,year)
+
+
+
 
