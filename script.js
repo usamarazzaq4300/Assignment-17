@@ -384,11 +384,6 @@
 // dayOfMonth(date)
 
 // 24. Write a JavaScript function to get ISO-8601 week number of year, weeks starting on Monday.
-// Example : 42 (the 42nd week in the year)
-// Test Data :
-// dt = new Date(2015, 10, 1);
-// console.log(ISO8601_week_no(dt));
-// 44
 // function noOfDays(m,d,y)
 // {
 //     var date = new Date()
@@ -432,3 +427,21 @@
 // var date = prompt("Please enter the date:")
 // var year = prompt("Please enter the year:")
 // noOfDays(month,date,year)
+
+// 25. Write a JavaScript function to get a full textual representation of a month, such as January or June.
+// function month(m,d,y) 
+// {
+//     var date = new Date()
+//     date.setMonth(m);
+//     date.setDate(d)
+//     date.setFullYear(y)
+//     var currentMonth = date.getMonth()
+//     var months = [0,"January","February","March","April","May","June","July",
+//     "August","September","October","November","December"]
+//     console.log(months[currentMonth])
+// }
+
+// var mont =prompt("Please enter month number:")
+// var date = prompt("Please enter the date:")
+// var year = prompt("Please enter the year:")
+// month(mont,date,year)
