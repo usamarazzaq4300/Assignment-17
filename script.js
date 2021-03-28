@@ -289,3 +289,146 @@
 // var date = prompt("Please enter the date:")
 // var year = prompt("Please enter the year:")
 // noOfDays(month,date,year)
+
+// 18. Write a JavaScript program to calculate age.   
+// function age(y)
+// {
+//     var date = new Date()
+//     var currentYear = date.getFullYear()
+//     var bDay = new Date()
+//     bDay.setFullYear(y)
+//     var bDayYear = bDay.getFullYear()
+//     var age = currentYear - bDayYear
+//     console.log(age+" years")
+// }
+// var year = prompt("Please enter the year:")
+// age(year)
+
+// 19. Write a JavaScript function to get the day of the month, 2 digits with leading zeros.   
+// function leadingZero(m) 
+// {
+//     var date = new Date()
+//     date.setMonth(m)
+//     var month = date.getMonth()
+//     if(month<=9)
+//     {
+//         console.log("0"+month)
+//     }
+//     else
+//     {
+//         console.log(month)
+//     }
+// }
+// var mon = prompt("Please enter the month:")
+// leadingZero(mon)
+
+// 20. Write a JavaScript function to get a textual representation of a day (three letters, Mon through Sun).   
+// function getDay()
+// {
+//     var date = new Date()
+//     var day = date.getDay()
+//     var days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]
+//     console.log(days[day])   
+// }
+// getDay()
+
+// 21. Write a JavaScript function to get a full textual representation of the day of the week (Sunday through Saturday).   
+// function getDay()
+// {
+//     var date = new Date()
+//     var day = date.getDay()
+//     var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+//     console.log(days[day])   
+// }
+// getDay()
+
+// 22. Write a JavaScript function to get ISO-8601 numeric representation of the day of the week (1 (for Monday) to 7 (for Sunday)).
+// function getDay()
+// {
+//     var date = new Date("March 25, 2021")
+//     var day = date.getDay()
+//     if(day == 0)
+//     {
+//         day=7
+//     }
+//     console.log(day)   
+// }
+// getDay()
+
+// 23. Write a JavaScript function to get English ordinal suffix for the day of the month, 2 characters (st, nd, rd or th.).
+// function dayOfMonth(d)
+// {
+//     var date = new Date()
+//     date.setDate(d)
+//     var da = date.getDate()
+//     var newda
+//     if(da == 1 || da == 21 || da ==31)
+//     {
+//         newda = da+"st"
+//     }
+//     else if(da == 2 || da == 22)
+//     {
+//         newda = da+"nd"
+//     }
+//     else if(da == 3 || da == 23)
+//     {
+//         newda = da+"rd"
+//     }
+//     else
+//     {
+//         newda = da+"th"
+//     }
+//     console.log(newda)
+// }
+// var date = prompt("Please enter the date:")
+// dayOfMonth(date)
+
+// 24. Write a JavaScript function to get ISO-8601 week number of year, weeks starting on Monday.
+// Example : 42 (the 42nd week in the year)
+// Test Data :
+// dt = new Date(2015, 10, 1);
+// console.log(ISO8601_week_no(dt));
+// 44
+// function noOfDays(m,d,y)
+// {
+//     var date = new Date()
+//     date.setMonth(m)
+//     date.setDate(d)
+//     date.setFullYear(y)
+//     var ye = date.getFullYear()
+//     var mo = date.getMonth()  
+//     var da = date.getDate()
+//     var NumOfDays = 0;
+//     var leapYear = [31,29,31,30,31,30,31,31,30,31,30,31]
+//     var notleapYear = [31,28,31,30,31,30,31,31,30,31,30,31]
+//     var weekNo ; 
+//     if(ye%4 == 0 && mo>=1)
+//     {
+//         for(i=0; i<mo; i++)
+//         {
+//             NumOfDays = NumOfDays+leapYear[i]
+//         }
+//     }
+//     else if(ye%4 != 0 && mo>=1)
+//     {
+//         for(i=0; i<mo; i++)
+//         {
+//             NumOfDays = NumOfDays+notleapYear[i]
+//         }
+//     }
+//     NumOfDays = NumOfDays+da
+//     if(NumOfDays< 7)
+//     {
+//         weekNo = 1
+//     }
+//     else
+//     {
+//         weekNo = NumOfDays/7
+//     }
+
+//     console.log("Week Number: "+Math.floor(weekNo))
+// }
+// var month =prompt("Please enter month number:")
+// var date = prompt("Please enter the date:")
+// var year = prompt("Please enter the year:")
+// noOfDays(month,date,year)
