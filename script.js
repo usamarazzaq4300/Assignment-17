@@ -445,3 +445,71 @@
 // var date = prompt("Please enter the date:")
 // var year = prompt("Please enter the year:")
 // month(mont,date,year)
+
+// 26. Write a JavaScript function to get a numeric representation of a month, with leading zeros (01 through 12).
+// function month(m){
+//     var date = new Date()
+//     date.setMonth(m)
+//     var userMonth = date.getMonth()
+//     if(userMonth <=9)
+//     {
+//         userMonth = "0"+userMonth
+//     }
+//     else
+//     {
+//         userMonth = userMonth
+//     }
+//     console.log(userMonth)
+    
+// }
+// var mon = prompt("Please enter month number:")
+// month(mon)
+
+// 27. Write a JavaScript function to get a short textual representation of a month, three letters (Jan through Dec).
+// function month (m)
+// {
+//     var date = new Date()
+//     date.setMonth(m)
+//     var month = date.getMonth()
+//     var months = [0,"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+//     console.log("Month: "+months[m])
+// }
+// var mont =prompt("Please enter month number:")
+// var date = prompt("Please enter the date:")
+// var year = prompt("Please enter the year:")
+// month(mont,date,year)
+
+// 28. Write a JavaScript function to get a full numeric representation of a year (4 digits).   
+// function numericYear(ye)
+// {
+//     var date = new Date()
+//     date.setFullYear(ye)
+//     var numyear = date.getFullYear()
+//     console.log("Numeric Year:"+numyear)
+// }
+// var year = prompt("Please enter the year:")
+// numericYear(year)
+
+// 29. Write a JavaScript function to get a two digit representation of a year.   
+// function numericYear(ye)
+// {
+//     var date = new Date()
+//     date.setFullYear(ye)
+//     var numyear = date.getFullYear()
+//     numyear = numyear.toString()
+//     var digitYear
+//     if(numyear.length<2)
+//     {
+//         digitYear ="0"+numyear
+//     }
+//     else
+//     {
+//         digitYear = numyear.slice(numyear.length-2 , numyear.length)
+//     }
+//     console.log("Numeric Year: "+digitYear)
+// }
+// var year = prompt("Please enter the year:")
+// numericYear(year)
+
+
+
