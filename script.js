@@ -609,51 +609,63 @@
 // function addMonths(m,d,y)
 // {
 //     var date = new Date()
-//     date.setMonth(m);
-//     date.setDate(d)
-//     date.setFullYear(y)
 //     var currentMonth = date.getMonth()
 //     var monthAfterAddition = currentMonth+m
 //     date.setMonth(monthAfterAddition)
 //     console.log(date)
 // }
-// var mont =prompt("Please enter month number:")
-// var date = prompt("Please enter the date:")
-// var year = prompt("Please enter the year:")
+// var mont =prompt("Please enter number of months:")
 // mont = parseInt(mont)
-// addMonths(mont,date,year)
+// addMonths(mont)
 
-// 44. Write a JavaScript function to get time differences in minutes between two dates.
-// function date()
+// 48. Write a JavaScript function to get time differences in months between two dates.
+// function differenceInMonths()
 // {
-//     var date1 = new Date()
-//     var date2 = new Date()
-//     date2.setMinutes(10)
-//     var differenceInMinutes = date2.getMinutes()-date1.getMinutes()
-//     console.log(differenceInMinutes)
+//     var date1 = new Date("Jun 13, 2013")
+//     var date2 = new Date("Oct 19,2017")
+//     var difference = date2.getFullYear()-date1.getFullYear()
+//     if(difference<0)
+//     {
+//         difference = difference*(-1)
+//     }
+//     else
+//     {
+//         difference = difference
+//     }
+//     var remainingMonth = date1.getMonth()-date2.getMonth()
+//     if(remainingMonth<0)
+//     {
+//         remainingMonth = remainingMonth*(-1)
+//     }
+//     else
+//     {
+//         remainingMonth = remainingMonth
+//     }
+//     var differenceMonths ;
+//     if(difference!=0)
+//     {
+//         differenceMonths = difference*12
+//         remainingMonth = remainingMonth+differenceMonths
+//     }
+//     else
+//     {
+//         remainingMonth = remainingMonth
+//     }
+//     console.log(remainingMonth)
 // }
-// date()
+// differenceInMonths()
 
-// 45. Write a JavaScript function to get time differences in hours between two dates.
-// function date()
+
+
+// 49. Write a JavaScript function to get time differences in years between two dates.
+// function differenceInYears()
 // {
-//     var date1 = new Date()
-//     var date2 = new Date()
-//     var date1Hours = date1.getHours()
-//     date1Hours = date1Hours%12
-//     date1.setHours(date1Hours)
-//     date2.setHours(10)
-//     var differenceInMinutes = date2.getHours()-date1.getHours()
-//     console.log(differenceInMinutes)
+    // var date1 = new Date("Jun 13, 2014")
+    // var date2 = new Date("Oct 19,2017")
+    // var difference = date2.getFullYear()-date1.getFullYear()
+//     console.log(difference)
 // }
-// date()
-
-46. Write a JavaScript function to get time differences in days between two dates.
-Test Data :
-dt1 = new Date("October 13, 2014 08:11:00");
-dt2 = new Date("October 19, 2014 11:13:00");
-console.log(diff_days(dt1, dt2));
-6
+// differenceInYears()
 
 
 
