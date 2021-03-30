@@ -432,9 +432,9 @@
 // function month(m,d,y) 
 // {
 //     var date = new Date()
-//     date.setMonth(m);
-//     date.setDate(d)
-//     date.setFullYear(y)
+    // date.setMonth(m);
+    // date.setDate(d)
+    // date.setFullYear(y)
 //     var currentMonth = date.getMonth()
 //     var months = [0,"January","February","March","April","May","June","July",
 //     "August","September","October","November","December"]
@@ -510,25 +510,175 @@
 // }
 // var year = prompt("Please enter the year:")
 // numericYear(year)
+// 33. Write a JavaScript function to get 12-hour format of an hour with leading zeros.   
+// function hours()
+// {
+//     var date = new Date()
+//     // date.setHours(13)
+//     var h = date.getHours()
+//     var fh = h%12
+//     if(fh<10)
+//     {
+//         console.log("0"+fh)
+//     }
+//     else
+//     {
+//         console.log(fh)
+//     }
+    
+// }
+// hours()
+
+// 34. Write a JavaScript function to get 24-hour format of an hour without leading zeros.
+// function hours()
+// {
+//     var date = new Date()
+//     var h = date.getHours()
+//     if(h<10)
+//     {
+//         console.log("0"+h)
+//     }
+//     else
+//     {
+//         console.log(h)
+//     }   
+//     console.log(date)
+// }
+// hours()
 
 // 35. Write a JavaScript function to get minutes with leading zeros (00 to 59).   
-// Test Data :
-// dt = new Date(1989, 10, 1);
-// console.log(minutes_with_leading_zeros(dt));
-// "00"
+// function minutes()
+// {
+//     var date = new Date()
+//     var mins = date.getMinutes()
+//     if(mins<10)
+//     {
+//         mins = "0"+mins
+//     }
+//     else
+//     {
+//         mins = mins
+//     }
+//     console.log(mins)
+// }
+// minutes()
 
-function minutes()
-{
-    var date = new Date()
-    var mins = date.getMinutes()
-    if(mins<10)
-    {
-        mins = "0"+mins
-    }
-    else
-    {
-        mins = mins
-    }
-    console.log(mins)
-}
-minutes()
+// 36. Write a JavaScript function to get seconds with leading zeros (00 through 59).   
+// function seconds()
+// {
+//     // var date = new Date()
+//     // var sec = date.getSeconds()
+//     // if(sec<10)
+//     // {
+//     //     sec = "0"+sec
+//     // }
+//     // else
+//     // {
+//     //     sec = sec
+//     // }
+//     console.log(sec)
+// }
+// seconds()
+
+// 41. Write a JavaScript function to add specified years to a date.   
+// function addYear(y)
+// {
+//     var date = new Date()
+//     var currentYear = date.getFullYear()
+//     var yearAfterAddition = currentYear+y
+//     console.log(yearAfterAddition)
+// }
+// var yearToAdd = prompt("Please enter the number of years you want to add:")
+// yearToAdd = parseInt(yearToAdd)
+// addYear(yearToAdd)
+
+// 42. Write a JavaScript function to add specified weeks to a date.
+// function addweeks(w)
+// {
+//     var date = new Date()
+//     var currentdate = date.getDate()
+//     var dateAfterAddition = currentdate+(w*7)
+//     date.setDate(dateAfterAddition)
+//     console.log(date)
+// }
+// var weeksToAdd = prompt("Please enter the number of years you want to add:")
+// weeksToAdd = parseInt(weeksToAdd)
+// addweeks(weeksToAdd)
+
+// 43. Write a JavaScript function to add specified months to a date.
+// function addMonths(m,d,y)
+// {
+//     var date = new Date()
+//     date.setMonth(m);
+//     date.setDate(d)
+//     date.setFullYear(y)
+//     var currentMonth = date.getMonth()
+//     var monthAfterAddition = currentMonth+m
+//     date.setMonth(monthAfterAddition)
+//     console.log(date)
+// }
+// var mont =prompt("Please enter month number:")
+// var date = prompt("Please enter the date:")
+// var year = prompt("Please enter the year:")
+// mont = parseInt(mont)
+// addMonths(mont,date,year)
+
+// 44. Write a JavaScript function to get time differences in minutes between two dates.
+// function date()
+// {
+//     var date1 = new Date()
+//     var date2 = new Date()
+//     date2.setMinutes(10)
+//     var differenceInMinutes = date2.getMinutes()-date1.getMinutes()
+//     console.log(differenceInMinutes)
+// }
+// date()
+
+// 45. Write a JavaScript function to get time differences in hours between two dates.
+// function date()
+// {
+//     var date1 = new Date()
+//     var date2 = new Date()
+//     var date1Hours = date1.getHours()
+//     date1Hours = date1Hours%12
+//     date1.setHours(date1Hours)
+//     date2.setHours(10)
+//     var differenceInMinutes = date2.getHours()-date1.getHours()
+//     console.log(differenceInMinutes)
+// }
+// date()
+
+46. Write a JavaScript function to get time differences in days between two dates.
+Test Data :
+dt1 = new Date("October 13, 2014 08:11:00");
+dt2 = new Date("October 19, 2014 11:13:00");
+console.log(diff_days(dt1, dt2));
+6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
