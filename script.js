@@ -618,54 +618,269 @@
 // mont = parseInt(mont)
 // addMonths(mont)
 
+// 44. Write a JavaScript function to get time differences in minutes between two dates.
+
+// function differenceInMinutes()
+// {
+//     date1 = new Date("October 13, 2014 11:13:00");
+//     date2 = new Date("October 13, 2014 12:13:00");
+//     var differenceInYear = date2.getFullYear()-date1.getFullYear()
+//     if(differenceInYear<0)
+//     {
+//         differenceInYear = differenceInYear*(-1)
+//     }
+//     else
+//     {
+//         differenceInYear = differenceInYear
+//     }
+//     var monthDiffernce = date2.getMonth()-date1.getMonth()
+//     if(monthDiffernce<0)
+//     {
+//         monthDiffernce = monthDiffernce*(-1)
+//     }
+//     else
+//     {
+//         monthDiffernce = monthDiffernce
+//     }    
+//     monthDiffernce = monthDiffernce-1
+//     var d = 31-date1.getDate()
+//     var differnceInDays = (monthDiffernce*30)+(date2.getDate()+d)-1
+//     var h1 = date1.getHours()
+//     var h2 = date2.getHours()
+//     diff = h1-h2;
+//     if(diff<0)
+//     {
+//         diff = diff*(-1)
+//     }
+//     else
+//     {
+//         diff = diff
+//     }
+//     var differencehours = (differnceInDays*24)+diff
+//     var LastMinutes = date1.getMinutes()-date2.getMinutes()
+//     if(LastMinutes<0)
+//     {
+//         LastMinutes =LastMinutes*(-1)
+//     }
+//     else
+//     (
+//         LastMinutes= LastMinutes
+//     )
+//     var differenceMinutes= (differencehours*60)+LastMinutes
+//     console.log("Difference in Minutes: "+differenceMinutes+" Minutes")
+// }
+// differenceInMinutes()
+
+// 45. Write a JavaScript function to get time differences in hours between two dates.
+// function differenceInHours()
+// {
+//     date1 = new Date("October 12, 2014 11:11:00");
+//     date2 = new Date("October 13, 2014 12:13:00");
+//     var differenceInYear = date2.getFullYear()-date1.getFullYear()
+//     if(differenceInYear<0)
+//     {
+//         differenceInYear = differenceInYear*(-1)
+//     }
+//     else
+//     {
+//         differenceInYear = differenceInYear
+//     }
+//     var monthDiffernce = date2.getMonth()-date1.getMonth()
+//     if(monthDiffernce<0)
+//     {
+//         monthDiffernce = monthDiffernce*(-1)
+//     }
+//     else
+//     {
+//         monthDiffernce = monthDiffernce
+//     }    
+//     monthDiffernce = monthDiffernce-1
+//     var d = 31-date1.getDate()
+//     var differnceInDays = (monthDiffernce*30)+(date2.getDate()+d)-1
+//     var h1 = date1.getHours()
+//     var h2 = date2.getHours()
+//     diff = h1-h2;
+//     if(diff<0)
+//     {
+//         diff = diff*(-1)
+//     }
+//     else
+//     {
+//         diff = diff
+//     }
+//     var differencehours = (differnceInDays*24)+diff
+//     console.log(differencehours)
+
+// }
+// differenceInHours()
+
+// 46. Write a JavaScript function to get time differences in days between two dates.
+// function differenceDays()
+// {
+//     var date1 = new Date("Oct 1, 2014")
+//     var date2 = new Date("Oct 19,2014")
+//     var differenceInYear = date2.getFullYear()-date1.getFullYear()
+//     if(differenceInYear<0)
+//     {
+//         differenceInYear = differenceInYear*(-1)
+//     }
+//     else
+//     {
+//         differenceInYear = differenceInYear
+//     }
+//     var monthDiffernce = date2.getMonth()-date1.getMonth()
+//     if(monthDiffernce<0)
+//     {
+//         monthDiffernce = monthDiffernce*(-1)
+//     }
+//     else
+//     {
+//         monthDiffernce = monthDiffernce
+//     }    
+//     monthDiffernce = monthDiffernce-1
+//     var d = 31-date1.getDate()
+//     var differnceInDays = (monthDiffernce*30)+(date2.getDate()+d)-1
+//     console.log("Difference in Days: "+differnceInDays+" Days")
+// }
+// differenceDays()
+
+// 47. Write a JavaScript function to get time differences in weeks between two dates.
+// function differenceInweeks()
+// {
+//     var date1 = new Date("Sep 19, 2014")
+//     var date2 = new Date("Oct 19,2014")
+//     var differenceInYear = date2.getFullYear()-date1.getFullYear()
+//     if(differenceInYear<0)
+//     {
+//         differenceInYear = differenceInYear*(-1)
+//     }
+//     else
+//     {
+//         differenceInYear = differenceInYear
+//     }
+//     var differenceWeeksOfYear = differenceInYear*52
+//     var monthDiffernce = date2.getMonth()-date1.getMonth()
+//     if(monthDiffernce<0)
+//     {
+//         monthDiffernce = monthDiffernce*(-1)
+//     }
+//     else
+//     {
+//         monthDiffernce = monthDiffernce
+//     }    
+//     monthDiffernce = monthDiffernce-1
+//     var d = 31-date1.getDate()
+//     var differnceInDays = (monthDiffernce*30)+(date2.getDate()+d)
+//     var differenceOfWeekOfThatYear = differnceInDays/7
+//     var totalDifference = differenceWeeksOfYear+differenceOfWeekOfThatYear
+//     console.log("Difference in weeks: "+Math.round(totalDifference)+" weeks")
+    
+// }
+// differenceInweeks()
+
 // 48. Write a JavaScript function to get time differences in months between two dates.
 // function differenceInMonths()
 // {
-//     var date1 = new Date("Jun 13, 2013")
-//     var date2 = new Date("Oct 19,2017")
-//     var difference = date2.getFullYear()-date1.getFullYear()
-//     if(difference<0)
+//     var date1 = new Date("feb 19, 2013")
+//     var date2 = new Date("july 19,2014")
+//     var monthDiffernce = date2.getMonth()-date1.getMonth()
+//     if(monthDiffernce<0)
 //     {
-//         difference = difference*(-1)
+//         monthDiffernce = monthDiffernce*(-1)
 //     }
 //     else
 //     {
-//         difference = difference
-//     }
-//     var remainingMonth = date1.getMonth()-date2.getMonth()
-//     if(remainingMonth<0)
+//         monthDiffernce = monthDiffernce
+//     }  
+//     var differenceInYear = 0; 
+//     if(date1.getMonth()<=date2.getMonth())
 //     {
-//         remainingMonth = remainingMonth*(-1)
+//         differenceInYear = date2.getFullYear()-date1.getFullYear()
+//     }
+//     if(differenceInYear<0)
+//     {
+//         differenceInYear = differenceInYear*(-1)
 //     }
 //     else
 //     {
-//         remainingMonth = remainingMonth
+//         differenceInYear = differenceInYear
 //     }
-//     var differenceMonths ;
-//     if(difference!=0)
-//     {
-//         differenceMonths = difference*12
-//         remainingMonth = remainingMonth+differenceMonths
-//     }
-//     else
-//     {
-//         remainingMonth = remainingMonth
-//     }
-//     console.log(remainingMonth)
+//     var diff = differenceInYear*12
+//     var totalDiff = monthDiffernce+diff
+//     console.log("Difference in Months: "+Math.round(totalDiff)+" Months") 
 // }
 // differenceInMonths()
-
-
 
 // 49. Write a JavaScript function to get time differences in years between two dates.
 // function differenceInYears()
 // {
-    // var date1 = new Date("Jun 13, 2014")
-    // var date2 = new Date("Oct 19,2017")
-    // var difference = date2.getFullYear()-date1.getFullYear()
-//     console.log(difference)
+//     var date1 = new Date("Jun 13, 2014")
+//     var date2 = new Date("Oct 19,2017")
+//     var difference = date2.getFullYear()-date1.getFullYear()
+//     console.log("Difference in year: "+difference+" years")
 // }
 // differenceInYears()
+
+// 50. Write a JavaScript function to get the week start date.
+
+// function weekStart()
+// {
+//     var date = new Date()
+//     var day = date.getDay()
+//     date.setDate(date.getDate()-day+1)
+//     console.log(date)
+// }
+// weekStart()
+
+// 51. Write a JavaScript function to get the week end date.
+// function weekEnd()
+// {
+//     var date = new Date()
+//     var day = date.getDay()
+//     date.setDate(date.getDate()+day+1)
+//     console.log(date)
+// }
+// weekEnd()
+
+// 52. Write a JavaScript function to get the month start date
+// function monthStart()
+// {
+//     var date = new Date()
+//     var day = date.getDate()
+//     date.setDate(date.getDate()-day+1)
+//     console.log(date)
+// }
+// monthStart()
+
+// 53. Write a JavaScript function to get the month end date.
+// function monthStart()
+// {
+//     var date = new Date()
+//     date.setDate(1)
+//     date.setMonth(3)
+//     var month = date.getMonth()
+//     var year = date.getFullYear()
+//     if(month == 0 || month == 2 || month == 4 || month == 6 || month == 7 || month == 9 || month == 11)
+//     {
+//         date.setDate(31)
+//     }
+//     else if(month == 3 || month == 5 || month == 8 || month == 10 )
+//     {
+//         date.setDate(30)
+//     }
+//     else if(year%4 ==0 && month == 2)
+//     {
+//         date.setDate(29)
+//     }
+//     else
+//     {
+//         date.setDate(28)
+//     }
+//     console.log(date)
+
+
+// }
+// monthStart()
 
 
 
